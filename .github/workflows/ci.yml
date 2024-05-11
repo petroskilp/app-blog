@@ -22,6 +22,11 @@ jobs:
           npm install
           npx prisma db push --force-reset
           npm run test:unit
+      - name: Deploy
+        env:
+          deploy_url: ${{ secrets.RENDER_URL }}
+        run: |
+          curl "$deploy_url"
           
       
       
