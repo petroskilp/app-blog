@@ -2,6 +2,8 @@ name: Continuius Integration
 on:
   pull_request:
     branches: [main]
+  push:
+    branches: [main]
 jobs:
   ci:
     runs-on: ubuntu-latest
