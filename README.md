@@ -1,5 +1,7 @@
 # Exemplo aplicação Fullstack com Next.js (REST API) para minicurso DEVOPS
 
+![example workflow](https://github.com/petroskilp/app-blog/actions/workflows/ci.yml/badge.svg)
+
 Esta aplicação de exemplo foi adaptada do Tutorial disponível em [Fullstack Example with Next.js (REST API)](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-nextjs-api-routes).
 
 O exemplo implementa uma aplicação **fullstack em typescript com [Next.js](https://nextjs.org/)** usando [React](https://reactjs.org/) e [Prisma Client](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client).
