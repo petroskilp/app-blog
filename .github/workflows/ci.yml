@@ -1,0 +1,24 @@
+name: Continuius Integration
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    environment: testing
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        node-version: 22
+      - name: Setup enviroment variables
+        run: |
+          touch .env
+          echo POSTGRES_URL=${{ secret.POSTGRES_URL }}
+        name: Run tests
+        run: |
+          npm install
+          npx prisma db push --force-reset
+          npm run test:unit
+          
+      
+      
