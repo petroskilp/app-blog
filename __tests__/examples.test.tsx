@@ -6,7 +6,7 @@ function sum(a, b) {
 }
 
 test("assert 1===1", async () => {
-  assert(1 === 2)
+  assert(1 === 1)
 });
 
 test("add 2 numbers", () => {
